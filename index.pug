@@ -10,17 +10,28 @@ html(lang="zh")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="style.css")
         title Hamburger
     body
         .banner
             ul
                 li 連結文字
                 li LOGO
-                li 連結文字
+                li 熱門產品
+                li I HAMBURGER
         .content
             .title
-                h1 我愛漢堡堡
-                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, quos.
-            +product("product1.png", "標題二", "Lorem ipsum dolor sit amet")
-            +product("product2.png", "標題二", "Lorem ipsum dolor sit amet")
-            +product("product3.png", "標題二", "Lorem ipsum dolor sit amet")
+               h1 熱門產品
+                p 年度最熱門產品，本店皆使用新鮮健康食材製作，讓您吃得健康又安心。
+            +product("images/product1.png", "牛肉堡", "雙層澳洲純牛肉加上雙層香濃吉事，再搭配酸黃瓜、洋蔥末、蕃茄醬，通通夾在鬆軟麵包裡。")
+            +product("images/product2.png", "培根牛肉堡", "澳洲純牛肉加上培根，再搭配酸黃瓜、洋蔥末、蕃茄醬，通通夾在鬆軟麵包裡。")
+            +product("images/product3.png", "蔬菜牛肉堡", "新鮮健康蔬菜加上澳洲純牛肉，再搭配酸黃瓜、洋蔥末、蕃茄醬，通通夾在鬆軟麵包裡。")
+            .about
+                .pic
+                    img(src="images/about.png", alt="關於漢堡")
+                .message
+                    h2 關於我們
+                    p 為了讓漢堡愛好者可以吃到最健康最安心的產品，本店所提供的食材皆是自行生產與監製，讓您可以吃的開心又健康。
+            footer
+                img(src="images/icon.png", alt="漢堡圖示")
+                div &copy; I HAMBURGER 2019.
