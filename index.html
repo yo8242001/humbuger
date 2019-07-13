@@ -3,48 +3,52 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css"/><link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Hamburger</title>
   </head>
   <body>
-    <div class="banner">
+    <div class="banner" data-aos="fade-down" data-aos-duration="1200">
       <ul>
-        <li><a href="#">熱門產品</a></li>
-        <li id="logo"><a href="#">I HAMBURGER</a></li>
-        <li><a href="#">關於我們</a></li>
+        <li data-aos="fade-down" data-aos-delay="800"><a href="#">熱門產品</a></li>
+        <li id="logo" data-aos="fade-down" data-aos-delay="600"><a href="#">I Hamburger</a></li>
+        <li data-aos="fade-down" data-aos-delay="800"> <a href="#">關於我們</a></li>
       </ul>
     </div>
     <div class="content">
       <div class="title">
-        <h1>熱門產品</h1>
-        <p>年度最熱門產品，本店皆使用新鮮健康食材製作，讓您吃得健康又安心。</p>
+        <h1 data-aos="fade-down">熱門產品</h1>
+        <p data-aos="fade-down" data-aos-delay="300">年度最熱門產品，本店皆使用新鮮健康食材製作，讓您吃得健康又安心。</p>
       </div>
       <div class="productBox">
-        <div class="product"><img src="images/product1.png"/>
-          <h2>牛肉堡</h2>
-          <p>雙層澳洲純牛肉加上雙層香濃吉事，再搭配酸黃瓜、洋蔥末、蕃茄醬，通通夾在鬆軟麵包裡。</p>
+        <div class="product"><img src="images/product1.png" data-aos="flip-left" data-aos-delay="500" data-aos-duration="1200"/>
+          <h2 data-aos="zoom-in" data-aos-delay="600" data-aos-duration="1200">牛肉堡</h2>
+          <p data-aos="zoom-in" data-aos-delay="700" data-aos-duration="1200">雙層澳洲純牛肉加上雙層香濃吉事，再搭配酸黃瓜、洋蔥末、蕃茄醬，通通夾在鬆軟麵包裡。</p>
         </div>
-        <div class="product"><img src="images/product2.png"/>
-          <h2>培根牛肉堡</h2>
-          <p>澳洲純牛肉加上培根，再搭配酸黃瓜、洋蔥末、蕃茄醬，通通夾在鬆軟麵包裡。</p>
+        <div class="product"><img src="images/product2.png" data-aos="flip-left" data-aos-delay="800" data-aos-duration="1200"/>
+          <h2 data-aos="zoom-in" data-aos-delay="900" data-aos-duration="1200">培根牛肉堡</h2>
+          <p data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="1200">澳洲純牛肉加上培根，再搭配酸黃瓜、洋蔥末、蕃茄醬，通通夾在鬆軟麵包裡。</p>
         </div>
-        <div class="product"><img src="images/product3.png"/>
-          <h2>蔬菜牛肉堡</h2>
-          <p>新鮮健康蔬菜加上澳洲純牛肉，再搭配酸黃瓜、洋蔥末、蕃茄醬，通通夾在鬆軟麵包裡。</p>
+        <div class="product"><img src="images/product3.png" data-aos="flip-left" data-aos-delay="1100" data-aos-duration="1200"/>
+          <h2 data-aos="zoom-in" data-aos-delay="1200" data-aos-duration="1200">蔬菜牛肉堡</h2>
+          <p data-aos="zoom-in" data-aos-delay="1300" data-aos-duration="1200">新鮮健康蔬菜加上澳洲純牛肉，再搭配酸黃瓜、洋蔥末、蕃茄醬，通通夾在鬆軟麵包裡。</p>
         </div>
       </div>
       <div class="title">
-        <h1>關於我們</h1>
+        <h1 data-aos="fade-down">關於我們</h1>
       </div>
       <div class="about">
-        <div class="pic"><img src="images/about.png" alt="關於漢堡"/></div>
+        <div class="pic"><img src="images/about.png" alt="關於漢堡" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300"/></div>
         <div class="message">
-          <p>為了讓漢堡愛好者可以吃到最健康最安心的產品，本店所提供的食材皆是自行生產與監製，讓您可以吃的開心又健康。</p>
+          <p data-aos="fade-right" data-aos-duration="1200" data-aos-delay="600">誕生於2019年7月，台灣台中市。採用100%高級牛肉，透過火山熔岩，炙烤出細膩講究的美味漢堡排。現在，夏威夷有1間店、日本30間店、倫敦2間店及臺灣2間店，風靡全球，所到之處都備受喜愛。</p>
         </div>
       </div>
-      <footer><img src="images/icon.png" alt="漢堡圖示"/>
-        <div>&copy; I HAMBURGER 2019.</div>
+      <footer><img src="images/icon.png" alt="漢堡圖示" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600"/>
+        <div data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300" data-aos-offset="-100">&copy; I Hamburger 2019.</div>
       </footer>
-    </div>
+    </div>  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
   </body>
 </html>
