@@ -1,0 +1,26 @@
+mixin product(img, title, p)
+    .product
+        img(src=img)
+        h2=title
+        p=p
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+html(lang="zh")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Hamburger
+    body
+        .banner
+            ul
+                li 連結文字
+                li LOGO
+                li 連結文字
+        .content
+            .title
+                h1 我愛漢堡堡
+                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, quos.
+            +product("product1.png", "標題二", "Lorem ipsum dolor sit amet")
+            +product("product2.png", "標題二", "Lorem ipsum dolor sit amet")
+            +product("product3.png", "標題二", "Lorem ipsum dolor sit amet")
