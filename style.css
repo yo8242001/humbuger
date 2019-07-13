@@ -1,1 +1,35 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
+* {
+  border: 0.5px solid rgba(255, 0, 0, 0.5) !important;
+}
+
+.banner {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/banner.png);
+  background-size: cover;
+  color: white;
+}
+
+.banner ul {
+  height: 100px;
+  width: 800px;
+  margin: 85px auto 0 auto;
+  text-align: center;
+}
+
+.banner ul li {
+  display: inline-block;
+}
+
+.banner ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.banner ul #logo {
+  font-size: 72px;
+  vertical-align: top;
+  margin: 0 60px;
+}
+/*# sourceMappingURL=style.css.map */
